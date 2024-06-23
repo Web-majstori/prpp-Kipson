@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezultati natjecanja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="TVZ Logo"></a>
+        </div>
+        <div class="nav-container">
+            <div class="nav">Novosti</div>
+            <div class="nav">
+                Natjecanja
+                <div class="nav-dropdown">
+                    <a href="pravila.html">Pravila natjecanja</a>
+                    <a href="prijava.html">Prijava na natjecanje</a>
+                    <a href="rezultati.html">Rezultati natjecanja</a>
+                </div>
+            </div>
+            <div class="nav">Predmeti</div>
+            <div class="nav">Studenti</div>
+            <div class="nav">Pretraga</div>
+        </div>
+        <button class="toggle-button" onclick="toggleDarkMode()">Tamni način rada</button>
+    </div>
+    <div class="content">
+        <div class="welcome">
+            <h1>Rezultati natjecanja</h1>
+            <p>Ovdje možete pronaći rezultate svih natjecanja organiziranih od strane TVZ-a.</p>
+            <br><br><br>
+            <h3>Trenutno ne postoje rezultati natjecanja.</h3>
+        </div>
+    </div>
+    <div class="footer">
+        TVZ 2024
+    </div>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const button = document.querySelector('.toggle-button');
+            if (document.body.classList.contains('dark-mode')) {
+                button.textContent = 'Svijetli način rada';
+            } else {
+                button.textContent = 'Tamni način rada';
+            }
+        }
+    </script>
+</body>
+</html>
